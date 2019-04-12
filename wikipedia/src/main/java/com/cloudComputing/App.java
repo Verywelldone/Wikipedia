@@ -8,13 +8,29 @@ import org.apache.spark.api.java.JavaRDD;
 import org.apache.spark.api.java.JavaSparkContext;
 import org.apache.spark.api.java.function.VoidFunction;
 
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Set;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 
 public class App {
 
-    public static void main(String[] args) {
+    public static Set<String> listFilesUsingJavaIO(String dir) {
+        return Stream.of(new File(dir).listFiles())
+                .filter(file -> !file.isDirectory())
+                .map(File::getName)
+                .collect(Collectors.toSet());
+    }
+
+    public static void main(String[] args) throws FileNotFoundException {
         BasicConfigurator.configure();
 //        get("/hello", (req, res) -> "Hello World");
 
@@ -32,7 +48,7 @@ public class App {
         inputData.add(652.234);
         inputData.add(9814.123);
 
-        // surpress la TONA de useless loggs
+        // suppress la TONA de useless loggs
         Logger.getLogger("org.apache").setLevel(Level.WARN);
         Logger.getLogger("org").setLevel(Level.OFF);
         Logger.getLogger("akka").setLevel(Level.OFF);
@@ -40,6 +56,7 @@ public class App {
         SparkConf conf = new SparkConf().setAppName("WikiProcessing").setMaster("local[*]");
 
         JavaSparkContext context = new JavaSparkContext(conf);
+
 
         /*
          * parallelize transforma setul de date in RDD-uri
@@ -49,6 +66,15 @@ public class App {
 
         // aplica foreach pe obiectul inputRDD. Ca parametrul transmit o functie care afieaza elementele.
         inputRDD.foreach((VoidFunction<Double>) aDouble -> System.out.print(aDouble + "  "));
+
+        // citeste datele dintr-un fisier CSV
+        JavaRDD<String> csvFile = context.textFile("C:\\Users\\Bogdan\\Desktop\\test\\csv.csv");
+        csvFile.foreach((VoidFunction<String>) s -> System.out.println(s));
+
+
+
+
+
 
 
         context.close();
