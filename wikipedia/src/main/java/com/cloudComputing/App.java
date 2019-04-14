@@ -68,13 +68,11 @@ public class App {
         inputRDD.foreach((VoidFunction<Double>) aDouble -> System.out.print(aDouble + "  "));
 
         // citeste datele dintr-un fisier CSV
-        JavaRDD<String> csvFile = context.textFile("C:\\Users\\Bogdan\\Desktop\\test\\csv.csv");
-        csvFile.foreach((VoidFunction<String>) s -> System.out.println(s));
+//        JavaRDD<String> csvFile = context.textFile("C:\\Users\\Bogdan\\Desktop\\test\\csv.csv");
+//        csvFile.foreach((VoidFunction<String>) s -> System.out.println(s));
 
 
-
-
-
+        System.out.println("TEST CRISTINA");
 
 
         context.close();
