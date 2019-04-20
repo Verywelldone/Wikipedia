@@ -64,13 +64,16 @@ public class App {
         JavaRDD<Double> inputRDD = context.parallelize(inputData);
         System.out.println();
 
+        inputRDD.foreach((VoidFunction<Double>) data -> System.out.println(data+" "));
+
+
         // aplica foreach pe obiectul inputRDD. Ca parametrul transmit o functie care afieaza elementele.
-        inputRDD.foreach((VoidFunction<Double>) aDouble -> System.out.print(aDouble + "  "));
+//        inputRDD.foreach((VoidFunction<Double>) aDouble -> System.out.print(aDouble + "  "));
 
         // citeste datele dintr-un fisier CSV
 //        JavaRDD<String> csvFile = context.textFile("C:\\Users\\Bogdan\\Desktop\\test\\csv.csv");
-//        csvFile.foreach((VoidFunction<String>) s -> System.out.println(s));
 
+//        csvFile.foreach((VoidFunction<String>) s -> System.out.println(s));
 
         System.out.println("TEST CRISTINA");
 
