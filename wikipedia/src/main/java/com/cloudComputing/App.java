@@ -56,9 +56,9 @@ public class App {
 
         while(resultSet.next()){
             for(int i = 1; i<resultSet.getMetaData().getColumnCount()+1;i++){
-                System.out.print(" " + resultSet.getMetaData().getColumnName(i) + "=" + resultSet.getObject(i));
+                System.out.println(resultSet.getMetaData().getColumnName(i) + "=" + resultSet.getObject(i));
             }
-            System.out.println(" ");
+            System.out.println(" \n ");
         }
 
 
