@@ -13,10 +13,12 @@ import java.net.Socket;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.logging.Logger;
 
 /* Server side-ul. */
 public class ServerMain {
 	private static ServerSocket SS;
+	private static final Logger LOGGER = Logger.getAnonymousLogger();
 
 	public static void main(String[] args) throws IOException, SQLException {
 
@@ -28,6 +30,8 @@ public class ServerMain {
 
 		
 		SS = new ServerSocket(59090);
+			
+		LOGGER.info("Waiting for cleint: ");
 		Socket socket = SS.accept();
 		System.out.println("Client connected");
 		
@@ -44,7 +48,7 @@ public class ServerMain {
 			if (resultSet.getString("name").equals(name)) {
 				
 				PrintWriter pr = new PrintWriter(socket.getOutputStream());
-				System.out.println("The name is: ");
+				System.out.println("Client: The name is: ");
 				pr.println(resultSet.getString("text"));
 				pr.flush();
 
