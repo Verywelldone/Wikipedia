@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b169ae47-d4d7-49ca-8cc6-7844e05abd3c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/wikipedia/src/main/java/Server/ServerMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wikipedia/src/main/java/model/People.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wikipedia/src/main/java/com/cloudComputing/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/wikipedia/src/main/java/com/cloudComputing/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wikipedia/target/classes/com/cloudComputing/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/wikipedia/target/classes/com/cloudComputing/App.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wikipedia/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wikipedia/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wikipedia/src/main/java/database/DataBaseConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/wikipedia/src/main/java/database/DataBaseConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wikipedia/src/main/java/model/Person.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/wikipedia/target/" />
@@ -20,11 +22,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wikipedia/src/main/java/com/cloudComputing/App.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="840">
-              <caret line="74" lean-forward="true" selection-start-line="74" selection-end-line="74" />
+            <state relative-caret-position="630">
+              <caret line="74" selection-start-line="74" selection-end-line="74" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wikipedia/src/main/java/database/DataBaseConnection.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="16" column="39" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wikipedia/src/main/java/database/DataBase.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -44,8 +64,31 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wikipedia/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="720">
-              <caret line="48" column="166" selection-start-line="48" selection-start-column="166" selection-end-line="48" selection-end-column="166" />
+            <state relative-caret-position="323">
+              <caret line="45" selection-start-line="45" selection-end-line="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/wikipedia/src/main/java/model/People.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="548">
+              <caret line="40" column="21" lean-forward="true" selection-start-line="40" selection-start-column="21" selection-end-line="40" selection-end-column="21" />
+              <folding>
+                <element signature="e#119#120#0" expanded="true" />
+                <element signature="e#145#146#0" expanded="true" />
+                <element signature="e#183#184#0" expanded="true" />
+                <element signature="e#213#214#0" expanded="true" />
+                <element signature="e#244#245#0" expanded="true" />
+                <element signature="e#271#272#0" expanded="true" />
+                <element signature="e#311#312#0" expanded="true" />
+                <element signature="e#343#344#0" expanded="true" />
+                <element signature="e#374#375#0" expanded="true" />
+                <element signature="e#401#402#0" expanded="true" />
+                <element signature="e#441#442#0" expanded="true" />
+                <element signature="e#473#474#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -71,9 +114,13 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/wikipedia/pom.xml" />
         <option value="$PROJECT_DIR$/wikipedia/src/main/java/Server/ServerMain.java" />
         <option value="$PROJECT_DIR$/wikipedia/src/main/java/com/cloudComputing/App.java" />
+        <option value="$PROJECT_DIR$/wikipedia/src/main/java/table.java" />
+        <option value="$PROJECT_DIR$/wikipedia/src/main/java/database/DataBaseConnection.java" />
+        <option value="$PROJECT_DIR$/wikipedia/pom.xml" />
+        <option value="$PROJECT_DIR$/wikipedia/src/main/java/model/Person.java" />
+        <option value="$PROJECT_DIR$/wikipedia/src/main/java/model/People.java" />
       </list>
     </option>
   </component>
@@ -96,10 +143,9 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="792" />
-    <option name="y" value="151" />
-    <option name="width" value="980" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="width" value="977" />
     <option name="height" value="1050" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -109,6 +155,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -127,26 +174,10 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Wikipedia" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wikipedia" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Wikipedia" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wikipedia" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cloudComputing" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -207,10 +238,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="634" y="121" width="784" height="840" extended-state="0" />
+    <frame x="-7" y="-7" width="1550" height="848" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.42403314" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20671141" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -251,13 +282,6 @@
     <entry file="file://$PROJECT_DIR$/wikipedia/src/main/main.iml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/wikipedia/src/main/java/com/cloudComputing/App.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="840">
-          <caret line="74" lean-forward="true" selection-start-line="74" selection-end-line="74" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wikipedia/src/main/java/Server/ServerMain.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -268,10 +292,55 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/wikipedia/src/main/java/table.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wikipedia/src/main/java/com/cloudComputing/App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="74" selection-start-line="74" selection-end-line="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wikipedia/src/main/java/database/DataBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wikipedia/src/main/java/database/DataBaseConnection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="16" column="39" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/wikipedia/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="48" column="166" selection-start-line="48" selection-start-column="166" selection-end-line="48" selection-end-column="166" />
+        <state relative-caret-position="323">
+          <caret line="45" selection-start-line="45" selection-end-line="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wikipedia/src/main/java/model/People.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="548">
+          <caret line="40" column="21" lean-forward="true" selection-start-line="40" selection-start-column="21" selection-end-line="40" selection-end-column="21" />
+          <folding>
+            <element signature="e#119#120#0" expanded="true" />
+            <element signature="e#145#146#0" expanded="true" />
+            <element signature="e#183#184#0" expanded="true" />
+            <element signature="e#213#214#0" expanded="true" />
+            <element signature="e#244#245#0" expanded="true" />
+            <element signature="e#271#272#0" expanded="true" />
+            <element signature="e#311#312#0" expanded="true" />
+            <element signature="e#343#344#0" expanded="true" />
+            <element signature="e#374#375#0" expanded="true" />
+            <element signature="e#401#402#0" expanded="true" />
+            <element signature="e#441#442#0" expanded="true" />
+            <element signature="e#473#474#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
