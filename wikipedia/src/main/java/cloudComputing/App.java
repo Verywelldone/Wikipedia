@@ -27,7 +27,7 @@ public class App {
 		Logger.getLogger("org").setLevel(Level.OFF);
 		Logger.getLogger("akka").setLevel(Level.OFF);
 
-		Socket socket = new Socket("localhost", 59090);
+		Socket socket = new Socket("localhost", 59092);
 		Scanner sc = new Scanner(System.in);
 		
 		PrintWriter pr = new PrintWriter(socket.getOutputStream());
@@ -36,11 +36,10 @@ public class App {
 		pr.println(msg);
 		pr.flush();
 		
-		
 		InputStreamReader in = new InputStreamReader(socket.getInputStream());
 		BufferedReader bf = new BufferedReader(in);
 		String serverMessage = bf.readLine();
-		
+
 		System.out.println(serverMessage);
 		
 		
