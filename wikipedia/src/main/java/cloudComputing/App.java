@@ -64,6 +64,11 @@ public class App {
 		BufferedReader bf = new BufferedReader(in);
 		String serverURI = bf.readLine();
 
+		System.out.println("Your search-ID is: ");
+		String message = sc.nextLine();
+		pr.println(message);
+		pr.flush();
+
 		/*
 		 * @Bogdan: Deschid browser pe URI-ul primit de la server
 		 */ URI uri = new URI(serverURI);

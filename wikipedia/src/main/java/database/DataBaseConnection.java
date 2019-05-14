@@ -17,9 +17,9 @@ public class DataBaseConnection {
 
 	public void sparkConfig() {
 
-		SparkConf sparkConf = new SparkConf().setAppName("wikiTest").setMaster("local[*]").set("spark.executor.memory",
+		SparkConf sparkConf = new SparkConf().setAppName("wikipedia").setMaster("local[*]").set("spark.executor.memory",
 				"1g");
-		this.spark = SparkSession.builder().config(sparkConf).appName("wikiTest").getOrCreate();
+		this.spark = SparkSession.builder().config(sparkConf).appName("wikipedia").getOrCreate();
 
 	}
 
@@ -27,8 +27,8 @@ public class DataBaseConnection {
 
 		String url = "jdbc:mysql://localhost:3306"; // ?useSSL=false - security - optional
 		String user = "root";
-		String table = "wiki.people";
-		String password = "1234";
+		String table = "wikipedia.people";
+		String password = "5RrLlQ";
 
 		Properties properties = new Properties();
 		properties.put("password", password);

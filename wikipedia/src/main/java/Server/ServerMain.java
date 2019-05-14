@@ -85,6 +85,21 @@ public class ServerMain {
 			java.awt.Desktop.getDesktop().browse(uri);
 			filtered.show();
 		}
+
+		filtered.show((int) filtered.count());
+		InputStreamReader input = new InputStreamReader(socket.getInputStream());
+		BufferedReader buff = new BufferedReader(input);
+		String newClientMessage = bf.readLine();
+		String newId = newClientMessage;
+
+		Dataset<Row> newFiltered = dataset.filter(dataset.col("ID").contains(newId));
+		/*System.out.println(" I found your exact Search:");
+		String stringURI = removeFirstAndLastCharacter(newFiltered.first().get(1).toString());
+
+		PrintWriter pr = new PrintWriter(socket.getOutputStream());
+		pr.println(stringURI);
+		pr.flush();*/
+
 		sc.close();
 	}
 
