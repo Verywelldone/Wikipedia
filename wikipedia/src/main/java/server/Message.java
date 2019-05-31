@@ -1,4 +1,4 @@
-package Server;
+package server;
 
 import org.apache.spark.sql.Dataset;
 import org.apache.spark.sql.Row;

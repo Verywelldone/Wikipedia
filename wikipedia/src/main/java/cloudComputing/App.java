@@ -8,11 +8,15 @@ import java.net.Socket;
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.sql.SQLException;
+import java.util.LinkedList;
 import java.util.Scanner;
 
 import org.apache.log4j.BasicConfigurator;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
+
+import model.People;
+import server.ServerMain;
 
 /*
  * @Bogdan
@@ -47,9 +51,17 @@ public class App {
 		/*
 		 * @Bogdan: deschid socket pentru conexiunea cu serverul
 		 */
-		Socket socket = new Socket("localhost", 59093);
+		Socket socket = new Socket("localhost", 59091);
 		Scanner sc = new Scanner(System.in);
-
+//
+//		LinkedList<People> ls = Server.ServerMain.peopleList;
+//		System.out.println(ls.size());
+//		for (People p : ls) {
+//			System.out.println(p.getName() + " " + p.getSearched());
+//		}
+		
+		ServerMain.getPeopleFromList();
+		
 		/*
 		 * @Bogdan: transmit catre server numele pe care vreau sa il caut:
 		 */ PrintWriter pr = new PrintWriter(socket.getOutputStream());
@@ -66,8 +78,11 @@ public class App {
 
 		/*
 		 * @Bogdan: Deschid browser pe URI-ul primit de la server
-		 */ URI uri = new URI(serverURI);
-		java.awt.Desktop.getDesktop().browse(uri);
+		 */
+		URI uri = new URI(serverURI);
+		System.out.println(uri.toString());
+
+//		java.awt.Desktop.getDesktop().browse(uri);
 
 	}
 }
